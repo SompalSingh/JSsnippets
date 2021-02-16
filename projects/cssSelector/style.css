@@ -1,0 +1,29 @@
+/* .container :not(){
+    color: blue;
+} */
+.container{
+    width: 600px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+
+}
+.container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container ul li{
+    border-left: 1px solid #cccccc;
+    list-style: none;
+    padding: 15px;
+}
+
+.container ul li:nth-child(2n){
+    color: red;
+}
+

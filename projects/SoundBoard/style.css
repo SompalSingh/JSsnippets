@@ -1,0 +1,28 @@
+
+body{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.btn{
+    background-color: #ccc;
+    border: 0;
+    border-radius: 3px;
+    margin: 1rem;
+    padding: 1.2rem;
+    color:red;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: .9;
+}
+.btn:focus{
+    outline: none;
+}

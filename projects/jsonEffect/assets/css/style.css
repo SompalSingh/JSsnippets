@@ -1,0 +1,28 @@
+body {
+  font-family: Roboto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.bodymovinanim {
+  width: 100px;
+  cursor: pointer;
+  position: relative;
+}
+
+input.check{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
