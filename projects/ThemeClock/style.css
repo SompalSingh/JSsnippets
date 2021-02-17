@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-colour:#000000;
+    --secondary-colour:#fff;
+}
+html.dark{
+    --primary-colour:#fff;
+    --secondary-colour:#333;
+}
+html.dark{
+    background-color:#111;
+    color: var(--primary-colour);
+}
+html{
+    transition: all 0.5s ease-in;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    max-width: 600px;
+}
+.toggle{
+    position: absolute;
+    top: 50px;
+    background-color: var(--primary-colour);
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 0;
+    color: var(--secondary-colour);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.toggle:focus{
+    outline: none;
+}
+.clock-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.clock{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+.needle{
+    background-color: var(--secondary-colour);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 65px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+.needle.hours{
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+.needle.minutes{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 85px;
+}
+.needle.seconds{
+    transform: translate(-50%, -100%) rotate(0deg);
+    background-color: #f00;
+}
+.center-point{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f00;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.center-point::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-colour);
+    width: 5px;
+    height: 5px;
+    border-radius:50%;
+    transition: all 0.5s ease-in;
+}
+.time{
+    font-size: 24px;
+    color:var(--primary-colour);
+    display: inline-flex;
+    margin-top: 1rem;
+    transition: all 0.5s ease-in;
+}
+.date{
+    font-size: 16px;
+    color:#636060;
+    display: inline-flex;
+    margin-top: 1rem;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+}
+.circle{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-left: .5rem;
+    background-color: var(--primary-colour);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-colour);
+    font-size: 12px;
+    transition: all 0.5s ease-in;
+}

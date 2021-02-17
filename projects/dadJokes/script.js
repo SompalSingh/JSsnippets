@@ -1,6 +1,6 @@
-const jokesEl = document.getElementById('jokes')
+const jokesEl = document.getElementById('jokes');
 const btn = document.getElementById('joksbtn');
- btn.addEventListener('click', newjokes);
+btn.addEventListener('click', newjokes);
 
 newjokes()
 function newjokes(){
@@ -11,7 +11,7 @@ function newjokes(){
     }
     fetch('https://icanhazdadjoke.com', config)
     .then((res) => res.json())
-    .then((data) => {
+    .then((data) => {  
         jokesEl.innerHTML = data.joke   
     });
 }
